@@ -1,0 +1,43 @@
+{
+	"cooking":{
+		"type":"cooking",
+		"data":[
+			{"title":"Bar Americain‘s Pickled Shrimp Deviled Eggs with Cornichon Remouiade","imgPath":"img-deviled-eggs.png"},
+			{"title":"Turkey Roulade with “Stovetop” Stuffing","imgPath":"img-roulade-cover.png"},
+			{"title":"Pasta with Fresh Tomato Sauce","imgPath":"img-fresh-tomato-sauce-cover.png"}
+		]
+	},
+	"season":{
+		"type":"season",
+		"data":[
+		{"title":"Barbeque: Cali Style",
+		"imgPath":"img-the-ingredients-cover.png",
+		"content":"You've undoubtedly heard oi Carolina Barbedue and Texas BBQ but have you ever tried Santa Maria Barbeoue ? unlike the aforementiohed styles. Santa Maria Barbeoue doesn't involve a long. slow cooking method or sweet sauces, but is instead a menu ieaturihg a well-seasoned calitorhia tri-tip cooked over native red oak coals on a special hand-cranked grill, accompanied by pinguinto beans, salsa, green salad, and garlic bread."},
+		{"title":"The perfect Fruitcake",
+		"imgPath":"img-fruitcake-cover.png",
+		"content":"The poor, maligned iruit cake..,prcpahiy one or the most hated cakes in the existence or baking. is it any wonder7 Would you want an incredibly dense. overly sweet. horribly boozy 'cake' chock-iuil ot iluorescent-coiored candied iruit pieces ?"},
+		{"title":"Spice-Crusted Salmon: A Holiday Dinrier That‘s As Impressive As it is Quick",
+		"imgPath":"img-salmon-cover.png",
+		"content":"Hollday season is well underway. and you know what that means: people are ausvi With that in mind. I developed a iestive recipe that's quick enough m serve on a weeknight (with some make-eneads). and beautiiui and impressive enough m serve as the centerpiece tor a holiday meal."}]
+	},
+	"restaurants":{
+		"type":"restaurants",
+		"data":[
+		{"title":"DELI BAR","imgPath":"img-restaurante-1.png","content":"156 Lafayette Street  New York,NY 10012,<br>212 677 6400 <br> delibar.com"},
+		{"title":"BAR NEW YORK","imgPath":"img-restaurant-2.png","content":"156 Lafayette Street New York,<br> NY 10012,<br> 212 677 6400 <br> delibar.com"},
+		{"title":"BAR TOKIO SUN","imgPath":"img-restaurant-3.png","content":"156 Lafayette Street New York,<br> NY 10012,<br>212 677 6400 <br> delibar.com"}]
+	},
+	"blogging":{
+		"type":"blogging",
+		"data":[
+		{"title":"Rhubarb: The Vegetable That Acts Like a Fruit",
+		"imgPath":"",
+		"content":"May is all about vegetables on hohhyﬂay.oom and one oi the most popular springtime vegetables is rhubarb. That's right. l said vegetable. Did you knew that rhubarb is actually a vegetable, not a bum While rhubarb is typically treated like a iruit and most oiten shows up in desserts in this country, it is also very good in savory dishes too and when used in glazes and cnutneys pairs really well with pork, lamb and chicken. But, since I could live on pastries (and often do) I love using rhubarb in a variety oi desserts."},
+		{"title":"Spic-Crusted Salmon: A Hoiidav Dinncr That‘sAs Impressive As it is Quick",
+		"imgPath":"",
+		"content":"Holiday season is well underway, and you know what people are BUSY! With that in mind, i developed a iestive recipe that's quick enough to serve on a weeknight (with some make-aheadsi, and beautiiui and impressive enough to serve as the centerpiece tor a holiday meal.we love to serve a whole side at iisti -- it makes tor a gorgeous presentation and it ieeds a crowd. This one has a spice run that does double duty. as seasoning iorthe salmon and as a coating tor spiced nuts that get stirred into nuriyiasmine rice."},
+		{"title":"A New Favorite Take an an Old Mediterranean Grain",
+		"imgPath":"img-eggplant-manchego-salad-cover.png",
+		"content":"Packed wnh complex carbohydrates and iiber, delicious and hearty whole grains play an important part in the Mediterranean diet. Look beyond rice and pasta, because II'S worth getting to know iarro, amaranth, millet, ireekah and wheat berries..."}
+	]}
+}

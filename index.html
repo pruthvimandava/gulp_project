@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="./">
+    <title>Our Favorite Chef</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen, print">   
+    <link type="text/css" rel="stylesheet" href="./css/style.css" media="screen, print">
+    
+    <!-- jQuery -->
+  <script src="./scripts/jquery-3.2.1.min.js"></script>
+  <script src="./scripts/handlebars.min.js"></script>
+    <script src="./scripts/script.js"></script>
+
+  </head>
+  <body>
+        <div class="container-fluid main-wrapper">
+      <header class="header-cont row">
+        <div class="col-xs-12 col-sm-6 col-md-8 img-cont"><img src="images/header_logo.png"></div>
+        <div class="col-xs-12 col-sm-6 col-md-4 text-right">
+          <ul class="nav col-xs-12">
+            <li class="nav-item"><a class="nav-link" href="#">Recipes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+          </ul>
+        </div>
+      </header>
+      <section>
+        <div class="section_one text-center">
+          <div class="section_two_left col-xs-12 col-sm-6 col-md-6">
+            <div class="section_one_img">
+              <img class="card-img" src="images/img-chef.png">
+            </div>
+            <div class="section_one_content">
+              <h2>Gila De Lauren</h2>
+              <p>She is an Italianrbom American chaﬁwriter, teievision personaiity, and the host of the current Food Network television program Food Paradise</p>
+            </div>
+          </div>
+          <div class="section_two_right col-xs-12 col-sm-6 col-md-6">
+            <img src="images/circle-img.gif">
+          </div>
+        </div>
+        <div class="section_two">
+          <div class="card col-xs-6 col-sm-3 active">
+            <img src="images/cooking_cart.png">
+            <div class="card-block">
+            <h3 class="card-title text-center">Let's Get Cooking</h3>
+            </div>
+          </div>
+        </div>
+        <div class="section_three">
+          <h2>Specials of this season</h2>
+        </div>
+        <div class="section_four">
+        </div>
+        <div class="section_five">
+          <h2>Guest Blogging</h2>
+          <div class="section_five_inner">
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <ul class="nav col-xs-12 col-sm-6">
+          <li>Contact</li>
+          <li>Bio</li>
+          <li>Press</li>
+        </ul>
+        <div class="col-xs-12 col-sm-6 copy-rights">@2016 website.com</div>
+      </footer>
+        </div>    
+    <script id="section_cont" type="text/x-handlebars-template">
+      {{#ifvalue type equals="cooking"}}
+        {{#each data}}
+          <div class="card col-xs-6 col-sm-3">
+            <img class="card-img" src="./images/{{imgPath}}" alt="Card image">
+            <div class="card-block card-title">
+            <p class="card-text">{{title}}</p>
+            </div>
+          </div>
+        {{/each}}
+      {{/ifvalue}}
+      {{#ifvalue type equals="season"}}
+        {{#each data}}
+          <div class="card col-xs-12 col-sm-4">
+            <div class="card-body">
+              <h4 class="card-title">{{title}}</h4>
+               <img class="card-img" src="./images/{{imgPath}}" alt="Card image">
+              <p class="card-text">{{content}}</p>
+            </div>
+          </div>
+        {{/each}}
+      {{/ifvalue}}
+      {{#ifvalue type equals="restaurants"}}
+        {{#each data}}
+          <div class="card col-xs-12 col-sm-3">
+            <div class="card-body">
+              <h4 class="card-title">{{title}}</h4>
+              <div class="card_block_cont">
+                <img class="card-img" src="./images/{{imgPath}}" alt="Card image">
+                <div class="adress_cont_mask"></div>
+                <p class="card-text adress_cont">{{{content}}}</p>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+        <div class="card col-xs-12 col-sm-3 active">
+          <div class="card-body">
+            <img src="images/restaurants_img.png">
+            <h3 class="card-title text-center">Restaurants</h3>
+          </div>
+        </div>
+      {{/ifvalue}}
+      {{#ifvalue type equals="blogging"}}
+        {{#each data}}
+          <div class="col-xs-12 col-sm-4 panel_{{@index}}">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">{{title}}</h3>
+              </div>
+              <div class="panel-body">
+                {{#if imgPath}}
+                <img class="card-img" src="./images/{{imgPath}}">
+                {{/if}}
+                <p class="card-text">{{content}}</p>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      {{/ifvalue}}
+    </script>
+    <script>
+      Handlebars.registerHelper("ifvalue", function(conditional, options) {
+         if (conditional == options.hash.equals) {
+        return options.fn(this);
+        } else {
+        return options.inverse(this);
+        }
+      });
+    </script>
+  </body>
+</html>
